@@ -1,0 +1,38 @@
+@media only screen and (max-width: 991px) {
+  .latest-news {
+    text-align: center;
+  }
+  .total-news {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header tr {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  section.container header {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin: 5px auto;
+  }
+  .corona {
+    text-align: center;
+  }
+  #confirmed {
+    font-weight: 500;
+    font-size: 12px;
+  }
+  #deaths {
+    font-weight: 500;
+    font-size: 12px;
+  }
+  #recovered {
+    font-weight: 500;
+    font-size: 12px;
+  }
+  section.container {
+    margin: 0 5px;
+  }
+}
