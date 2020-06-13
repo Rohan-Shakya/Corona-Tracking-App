@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corona Tracking App</title>
+
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- global css file -->
+    <link rel="stylesheet" href="./css/global.css">
+
+    <!-- responsive css file -->
+    <link rel="stylesheet" href="./css/responsive.css">
+<body>
+    <main>
+
+        <!-- Start main news -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-4">
+                    <div class="latest-news">
+                        <h1>Latest Corona News</h1>
+                        <ul>
+                            <li>New Confirmed: <span id="new-case-confirmed"></span></li>
+                            <li>New Deaths: <span id="new-death-confirmed"></span></li>
+                            <li>New Recovered: <span id="new-recovered-confirmed"></span></li>
+                            <span id="latest-date"></span>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4 image">
+                    <img src="./img/coronavirus-map-world-2020Mar14-1280x640.jpg" alt="">
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <div class="total-news">
+                        <ul>
+                            <li>Total Confirmed: <span id="total-case-confirmed"></span></li>
+                            <li>Total Deaths: <span id="total-death-confirmed"></span></li>
+                            <li>Total Recovered: <span id="total-recovered-confirmed"></span></li>
+                        </ul>
+                        <img src="./img/b1a03b0353af59c9e42a458921f0a2b1_sekilas-tentang-virus-corona-dan-penyakit-covid-19_1000-727.png" alt="" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End main news -->
+
+        <footer>
+            <marquee direction="right">
+                <span>@Stay Safe</span>
+                <span>@Stay Home</span>
+                <span>@Take Care</span>
+            </marquee>
+        </footer>
+
+        <!-- country detail -->
+
+        <section class="container">
+            <div class="row">
+                <div class="corona col-12">
+                    <header>
+                        <h2>Covid-19</h2>
+                        <form action="">
+                            
+                            <input type="text" placeholder="Search for countries ..." class="form-control" id="myInput" onkeyup="myFunction()">
+                            <span class="search">
+                                <img src="./img/search_48px.png" alt="">
+                            </span>
+                        </form>
+                    </header>
+                    <hr>
+
+                    <div class="header">
+                        <table>
+                            <tr class="heading">
+                                <th style="width: 30%; font-weight: 600; color: #616060;"rowspan="2">Country</th>
+                            </tr>                        
+                            <tr>
+                              <th id="confirmed">Confirmed</th> 
+                              <th id="deaths">Deaths</th>
+                              <th id="recovered">Recovered</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="details">
+                        <table id="countryList">
+                            <!-- <tr>
+                              <td style="width: 30%;" colspan="2">Afghanistan</td>
+                              <td>22142</td>
+                              <td>405</td>
+                              <td>50</td>
+                            </tr> -->
+                        </table> 
+                    </div>
+                       
+                </div>
+            </div>
+
+            
+        </section>
+        <!-- country detail end -->
+    </main>
+
+    
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <!-- bootstrap js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- custom js -->
+    <script src="./js/app.js"></script>
+</body>
+</html>
+
