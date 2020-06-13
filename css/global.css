@@ -1,0 +1,46 @@
+img {
+  width: 100%;
+}
+
+ul li {
+  list-style: none;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 10px 0;
+}
+
+#confirmed,
+#new-case-confirmed,
+#total-case-confirmed {
+  color: palevioletred;
+}
+#deaths,
+#new-death-confirmed,
+#total-death-confirmed {
+  color: red;
+}
+#recovered,
+#new-recovered-confirmed,
+#total-recovered-confirmed {
+  color: green;
+}
+
+#new-case-confirmed,
+#total-case-confirmed,
+#new-death-confirmed,
+#total-death-confirmed,
+#new-recovered-confirmed,
+#total-recovered-confirmed {
+  font-weight: 600;
+}
